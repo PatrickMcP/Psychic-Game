@@ -21,8 +21,8 @@ function psychicGame() {
         else if (userChoice == compGuess) {
             wins++;
             document.getElementById("wins").innerHTML = "Wins: " + wins;
+            alert("You win!")
             resetGame();
-            alert("You Win!")
         }
         //lower count of guess left
         else if ((userChoice != compGuess) && (guessLeft > 0)) {
